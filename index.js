@@ -32,13 +32,14 @@ switch (randomNumber2)
  case 6: document.getElementById("2").src="images/dice6.png";
             break;
  }
-
- if (randomNumber1===randomNumber2) {
-     document.querySelector("h1").innerHTML="🚩Draw🚩";
-    }
- else if(randomNumber2>randomNumber1) {
-     document.querySelector("h1").innerHTML="Player 2 Wins🚩";
-     }
- else{
-     document.querySelector("h1").innerHTML="🚩Player 1 Wins ";
-     }
+ var sum=randomNumber1+randomNumber2;
+ document.querySelector("h1").innerHTML="Both the Dice rolled to get u !! "+sum + " !!";
+//  if (randomNumber1===randomNumber2) {
+     
+//     }
+//  else if(randomNumber2>randomNumber1) {
+//      document.querySelector("h1").innerHTML="Player 2 Wins🚩";
+//      }
+//  else{
+//      document.querySelector("h1").innerHTML="🚩Player 1 Wins ";
+//      }
